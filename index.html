@@ -346,7 +346,7 @@
         </div>
     </footer>
 
-    <div class="backdrope " data-modal>
+    <div class="backdrope is-hidden" data-modal>
         <div class="modal">
             <button class="btn-close" data-modal-close>
                 <svg class="icon-close" width="24" height="24">
@@ -392,10 +392,12 @@
                 </label>
 
                 <label class="check-label">
-                    <input class="modal-checkbox" type="checkbox" name="policy"/>
-                    <svg class="checkbox-icon" width="16" height="16">
-                        <use href="./image/icons/symbol-defs-one.svg#icon-vector"></use>
-                    </svg>
+                    <input class="modal-checkbox visually-hidden" type="checkbox" name="policy"/>
+                    <span class="checkbox-wrap">
+                        <svg class="checkbox-icon" width="10" height="8">
+                            <use href="./image/icons/symbol-defs-one.svg#icon-vector"></use>
+                        </svg>
+                    </span>
                     I accept the terms and conditions of the 
                     <a class="modal-policy" href="">Privacy Policy</a>
                 </label>
