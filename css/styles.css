@@ -804,26 +804,34 @@ column-gap: 24px;
 .btn-close {
     /*position: absolute;
     top: 24px;
-    right: 24px;*/
-    padding: 0;
+    right: 24px;
+    padding: 0;*/
     display: block;
+    cursor: pointer;
     margin-left: auto;
     width: 24px;
     height: 24px;
 
+    background-color: var(--footer-text-color);
     border: none;
     border-radius: 50%;
 
-    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-close {
-    fill: #E7E9FC;
+    fill: #000000;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-close:hover .icon-close {
-    fill: var(--hover-color);
+.btn-close:hover,
+.btn-close:focus {
+    background-color: var(--hover-color);
+}
+
+.btn-close:hover .icon-close,
+.btn-close:focus .icon-close {
+    fill: var(--white-color);
 }
 
 .modal-title {
